@@ -1,0 +1,292 @@
+* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#inicio .contenido header {
+  background-color: #2196f3;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+#inicio .contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1 {
+  text-align: center;
+  color: white;
+}
+#inicio .contenido header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: 0.5s;
+  font-size: 18px;
+}
+#sobremi {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 125px;
+  color: white;
+  display: flex;
+  background: #66b8f5;
+}
+#sobremi .contenedor-foto {
+  max-width: 400px;
+  margin-right: 80px;
+}
+#sobremi .contenedor-foto img {
+  padding: 5px;
+  width: 70%;
+  border-radius: 70%;
+  background-color: black;
+}
+#sobremi .sobremi .titulo-seccion {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: underline;
+}
+#sobremi .sobremi h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+#sobremi .sobremi h2 span {
+  color: blue;
+}
+#sobremi .sobremi h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#sobremi .sobremi p {
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 12px;
+}
+#sobremi .sobremi a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 2px solid rgb(18, 18, 18);
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+.educacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+  background: #2196f3;
+}
+.cards {
+  display: block;
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid rgb(15, 15, 15);
+  position: relative;
+}
+h5 {
+  font-size: 18px;
+  text-align: center;
+  background: blue;
+  color: white;
+  border-radius: 5px;
+  width: 55px;
+}
+p {
+  font-size: 1.4rem;
+  color: blue;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+  padding-top: 1.5rem;
+}
+.experiencia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.card .cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .frente {
+  transform: perspective(600px) rotate(0deg);
+  box-shadow: 0 5px 10px black;
+}
+
+.card .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .frente h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background: black;
+  text-align: center;
+}
+
+.card .espalda {
+  transform: perspective(680px) rotateY(180deg);
+  background: white;
+  padding: 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 30px black;
+}
+
+.card .espalda h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.card .espalda p {
+  letter-spacing: 1px;
+  color: blue;
+}
+.card:hover .frente {
+  transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .espalda {
+  transform: perspective(600px) rotateY(360deg);
+}
+.portfolio .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: #66b8f5;
+}
+
+.portfolio .box-container .box {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img {
+  transform: scale(1.3);
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2196f3;
+}
+
+.contact .row .content {
+  flex: 1 1 30rem;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.contact .row form {
+  flex: 1 1 3rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  margin: 1rem 0;
+  background: rgb(123, 218, 161);
+  color: black;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.contact .row form .box::placeholder {
+  text-transform: capitalize;
+}
+.contact .row form .message {
+  height: 2rem;
+  resize: none;
+}
+
+.contact .row .content .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+}
+.contact .row .content .info h3 i {
+  padding: 1rem;
+  color: rgb(2, 47, 29);
+}
+
+#error_mensaje {
+  margin-bottom: 20px;
+  padding: 0px;
+  background: rgb(52, 5, 223);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
